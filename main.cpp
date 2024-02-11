@@ -109,9 +109,9 @@ vector<string> menu(){
 
     if(line=="y"){
         state=1;
-    cout<<"Enter the path of the expected output(with filename)"<<endl;
-    getline(cin,line);
-    in.push_back(line);
+        cout<<"Enter the path of the expected output(with filename)"<<endl;
+        getline(cin,line);
+        in.push_back(line);
     }
 
     return in;
