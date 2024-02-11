@@ -10,7 +10,7 @@ void comp(const string& filename , const string& path){
 }
 
 void exec(const string& filename , const string& path){
-    string cmd = "exec.bat " + filename+ " \"" + path + " \"";
+    string cmd = "cd \"C:\\Users\\Anmol Goel\\Desktop\\Tech\\code_tester\\cmake-build-debug\" && exec.bat " + filename+ " \"" + path + " \"";
     system(cmd.c_str());
 }
 
@@ -125,6 +125,7 @@ int main(){
     //todo remove the filename argument in the exec.bat file
 
     vector<string>in;
+    system("cd");
 
     in=menu();
     fetch_data(in[2] , in[3]);
